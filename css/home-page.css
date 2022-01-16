@@ -1,0 +1,569 @@
+* {
+   padding: 0px !important;
+   margin: 0px !important;
+   box-sizing: border-box !important;
+   font-family: Verdana, sans-serif;
+}
+.navbar {
+   background-color: #0072d3 !important;
+}
+.navbar .navbar-brand:hover {
+   color: lightsalmon;
+   transition: 1s;
+}
+.navbar .menu .nav-link:hover {
+   color: orange;
+}
+.navbar .menu .active {
+   color: orange !important;
+}
+#education #communication {
+   background-image: url("../images/Communication.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+}
+#education #communication img{
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+}
+
+@media only screen and (max-width: 767px){
+   /** header  **/
+   .header .navbar .container-fluid {
+      height: 60px;
+   }
+   .navbar .container-fluid .navbar-toggler {
+      position: absolute;
+      left: 20px;
+      top: 15px
+   }
+   nav .navbar-brand {
+      position: absolute;
+      left: 35%;
+      top: 15px;
+      font-weight: 600;
+   }
+   nav #search-button .fas {
+      color:  whitesmoke;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+   }
+   .navbar .menu {
+      position: absolute;
+      top: 60px;
+      background-color: #0072d3;
+      width: 100%;
+   }
+   .navbar .menu .nav-link {
+      font-size: 11px;
+      line-height: 2;
+   }
+   .navbar .menu .active {
+      color: orange !important;
+   }
+   .navbar .menu .nav .fas {
+      display: none;
+   }
+   /**  ABOUT US **/
+   .about-us .about-us-text .fas {
+      color: #0072d3;
+   }
+   .about-us .about-us-text .about-text-title {
+      font-size: 11px;
+   }
+   .about-us .about-us-text .about-text-paragraph {
+      font-size: 16px;
+   }
+   .about-us .about-us-text #text-small {
+      font-size: 10px;
+   }
+   /** education  **/
+   #education #communication img{
+      position: absolute;
+      left: 20px;
+   }
+   .consulting-hand, .consulting-book {
+      display: flex;
+      margin-top: 30px;
+      
+   }
+   .consulting-text a, .consulting-text p {
+      color: white;
+      padding-left: 50px;
+      text-decoration: none;
+   }
+   
+   .communication-text a, .fas {
+      color: white;
+      text-decoration: none;
+   }
+   .consulting-text p, .communication-text a {
+      font-size: 12px;
+   }
+   .consulting-text {
+      padding: 0 50px;
+   }
+   /** news  **/
+   #news #news-title .fas{
+      color: #0072d3;
+   }
+   #news #news-title p {
+      font-size: 11px;
+   }
+   #news #news-title h3 {
+      font-weight: 600;
+   }
+   #news #news-content img {
+      width: 100%;
+      height: 300px;
+   }
+   #news #news-content a {
+      text-decoration: none;
+      color: black;
+   }
+   #news #news-content h4 {
+      font-size: 16px;
+      font-weight: 600;
+   }
+   #news #news-content p .fas, #news #news-content p a, #news #news-content p {
+      color: black;
+      font-size: 11px;
+   }
+   /** news  **/
+   #contact #contact-title .fas {
+      color: #0072d3;
+   }
+   #contact #contact-title p {
+      font-size: 12px;
+   }
+   #contact #contact-title h4 {
+      font-size: 16px;
+   }
+   #contact #contact-form .input {
+      border: 1px solid gray;
+      border-radius: 5px;
+      width: 100%;
+   }
+   #contact #contact-form .input::placeholder {
+      padding-left: 10px;
+   }
+   #contact #submit {
+      text-align: center;
+   }
+   #contact #submit .input-submit {
+      background-color: orange;
+      border-radius: 5px;
+      border: none;
+      padding: 10px 10px;
+      font-size: 14px;
+      height: 40px;
+      width: 150px;
+      color: rgba(240, 248, 255, 0.699);
+   }
+   #contact #submit .input-submit:hover {
+      background-color: olivedrab;
+   }
+   /** footer  **/
+   .footer {
+      background-color: black;
+   }
+   .footer .footer1 h4 {
+      font-size: 16px;
+   }
+   .footer .footer1 p {
+      font-size: 11px;
+   }
+   .footer-form {
+      display: flex;
+      margin-top: 15px;
+      position: relative;
+   }
+   .footer-input {
+      width: 100%;
+      border: none;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-bottom: 1px double white;
+      background-color: black;
+      color: white;
+      font-size: 11px;
+   }
+   .footer .footer-submit {
+      position: absolute;
+      bottom: 4px;
+      left: 75%;
+      width: 25%;
+      font-size: 12px;
+      padding-bottom: 1px;
+      border: none;
+   }
+   .footer-form .footer-input::placeholder{
+      font-size: 12px;
+      padding-left: 10px;
+   }
+   .footer-form .footer-submit:hover {
+      background-color: yellow;
+   }
+   .footer .footer2 p {
+      font-size: 14px;
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+   /** header  **/
+   .header .navbar .container-fluid {
+      height: 60px;
+   }
+   .navbar .navbar-brand {
+      font-weight: 600;
+      position: absolute;
+      left: 40px;
+      top: 15px;
+   }
+   .navbar #search-button .fas {
+      display: none;
+   }
+   .navbar .menu .nav .fas {
+      display: inline-block;
+      font-size: 12px;
+      color: rgb(194, 194, 194);
+   }
+   .navbar .menu .nav .nav-link {
+      font-size: 12px;
+   }
+   
+   .navbar .menu {
+      position: absolute;
+      right: 20px;
+   }
+   /** about us  **/
+   .about-us {
+      padding: 0 20px !important;
+   }
+   .about-us .about-us-text .fas {
+      color: #0072d3;
+   }
+   .about-us .about-us-text .about-text-title {
+      font-size: 11px;
+   }
+   .about-us .about-us-text .about-text-paragraph {
+      font-size: 16px;
+   }
+   .about-us .about-us-text #text-small {
+      font-size: 10px;
+   }
+   /** education  **/
+   #education #communication img{
+      position: absolute;
+      left: 20px;
+   }
+   .consulting-hand, .consulting-book {
+      display: flex;
+      margin-top: 30px;
+      
+   }
+   .consulting-text a, .consulting-text p {
+      color: white;
+      padding-left: 50px;
+      text-decoration: none;
+   }
+   
+   .communication-text a, .fas {
+      color: white;
+      text-decoration: none;
+   }
+   .consulting-text p, .communication-text a {
+      font-size: 12px;
+   }
+   /** news  **/
+   #news #news-title .fas{
+      color: #0072d3;
+   }
+   #news #news-title p {
+      font-size: 11px;
+   }
+   #news #news-content img {
+      width: 100%;
+      height: 200px;
+   }
+   #news #news-content a {
+      text-decoration: none;
+      color: black;
+   }
+   #news #news-content h4 {
+      font-size: 16px;
+      font-weight: 600;
+   }
+   #news #news-content p .fas, #news #news-content p a, #news #news-content p {
+      color: black;
+      font-size: 11px;
+   }
+   #contact #contact-title .fas {
+      color: #0072d3;
+   }
+   /** contact  **/
+   #contact #contact-title p {
+      font-size: 12px;
+   }
+   #contact #contact-title h4 {
+      font-size: 16px;
+   }
+   #contact #contact-form .input {
+      border: 1px solid gray;
+      border-radius: 5px;
+      width: 100%;
+   }
+   #contact #contact-form .input::placeholder {
+      padding-left: 10px;
+   }
+   #contact #submit {
+      text-align: center;
+   }
+   #contact #submit .input-submit {
+      background-color: orange;
+      border-radius: 5px;
+      border: none;
+      padding: 10px 10px;
+      font-size: 14px;
+      height: 40px;
+      width: 150px;
+      color: rgba(240, 248, 255, 0.699);
+   }
+   #contact #submit .input-submit:hover {
+      background-color: olivedrab;
+   }
+   /** footer  **/
+   .footer {
+      background-color: black;
+   }
+   .footer .footer1 h4 {
+      font-size: 16px;
+   }
+   .footer .footer1 p {
+      font-size: 11px;
+   }
+   .footer-form {
+      display: flex;
+      margin-top: 15px;
+      position: relative;
+   }
+   .footer-input {
+      width: 100%;
+      border: none;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-bottom: 1px double white;
+      background-color: black;
+      color: white;
+      font-size: 11px;
+   }
+   .footer .footer-submit {
+      position: absolute;
+      bottom: 4px;
+      left: 75%;
+      width: 25%;
+      font-size: 12px;
+      padding-bottom: 1px;
+      border: none;
+   }
+   .footer-form .footer-input::placeholder{
+      font-size: 12px;
+      padding-left: 10px;
+   }
+   .footer-form .footer-submit:hover {
+      background-color: yellow;
+   }
+   .footer .footer2 p {
+      font-size: 14px;
+   }
+}
+@media screen and (min-width: 1024px) {
+   /** header  **/
+   .header .navbar .container-fluid {
+      height: 60px;
+   }
+   .navbar .navbar-brand {
+      font-weight: 600;
+      position: absolute;
+      left: 20%;
+      top: 15px;
+   }
+   .navbar .menu {
+      position: absolute;
+      right: 18%;
+   }
+   .navbar #search-button .fas {
+      display: none;
+   }
+   .navbar .menu .nav .fas {
+      display: inline-block;
+      font-size: 12px;
+      color: rgb(221, 220, 220);
+   }
+   .navbar .menu .nav .nav-link {
+      font-size: 12px;
+   }
+   .about-us {
+      margin: 0px 20% !important;
+   }
+   .about-us .about-us-text .fas {
+      color: #0072d3;
+      font-size: 12px;
+   }
+   .about-us .about-us-text .about-text-title, .about-us .about-us-text #text-small {
+      font-size: 10px;
+   }
+   .about-us .about-us-text .about-text-paragraph {
+      font-size: 14px;
+   } 
+   /** education  **/
+   #education #communication img{
+      position: absolute;
+      left: -25px;
+   }
+   .consulting-hand, .consulting-book {
+      display: flex;
+   }
+   .consulting-text a, .consulting-text p {
+      color: white;
+      text-decoration: none;
+   }
+   .consulting-text h3 {
+      font-size: 16px;
+      font-weight: 600;
+   }
+   .communication-text a, .fas {
+      color: white;
+      text-decoration: none;
+   }
+   .consulting-text p, .communication-text a {
+      font-size: 10px;
+   }
+   /** news  **/
+   #news {
+      margin: 0 20% !important;
+   }
+   #news #news-title .fas{
+      color: #0072d3;
+   }
+   #news #news-title p {
+      font-size: 11px;
+   }
+   #news #news-title h3 {
+      font-size: 18px;
+      font-weight: 600;
+   }
+   #news #news-content img {
+      width: 100%;
+      height: 150px;
+   }
+   #news #news-content a {
+      text-decoration: none;
+      color: black;
+   }
+   #news #news-content h4 {
+      font-size: 14px;
+      font-weight: 600;
+   }
+   #news #news-content p .fas, #news #news-content p a, #news #news-content p {
+      color: black;
+      font-size: 11px;
+   }
+   /** contact  **/
+   #contact {
+      margin: 0 20% !important;
+   }
+   #contact #contact-title .fas {
+      color: #0072d3;
+   }
+   #contact #contact-title p {
+      font-size: 12px;
+   }
+   #contact #contact-title h4 {
+      font-size: 16px;
+   }
+   #contact #contact-form form {
+      display: flex;
+   }
+   #contact #contact-form input {
+      border: 1px solid gray;
+      border-radius: 5px;
+      width: 90%;
+      height: 40px;
+   }
+   #contact #contact-form .input-textarea {
+      width: 97%;
+   }
+   #contact #contact-form .input::placeholder {
+      padding-left: 10px;
+      font-size: 12px;
+   }
+   #contact #submit {
+      text-align: center;
+   }
+   #contact #submit .input-submit {
+      background-color: orange;
+      border-radius: 5px;
+      border: none;
+      padding: 10px 10px;
+      font-size: 14px;
+      height: 40px;
+      width: 150px;
+      color: rgba(240, 248, 255, 0.699);
+      position: absolute;
+      left: 42%;
+   }
+   #contact #submit .input-submit:hover {
+      background-color: olivedrab;
+   }
+   /** footer  **/
+   .footer {
+      background-color: black;
+   }
+   .footer .footer1 {
+      padding: 0 20% !important;
+   }
+   .footer .footer1 h4 {
+      font-size: 11px;
+   }
+   .footer .footer1 p {
+      font-size: 9px;
+   }
+   .footer-form {
+      display: flex;
+      margin-top: 15px;
+      position: relative;
+   }
+   .footer-input {
+      width: 100%;
+      border: none;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-bottom: 1px double white;
+      background-color: black;
+      color: white;
+      font-size: 11px;
+   }
+   .footer .footer-submit {
+      position: absolute;
+      bottom: 4px;
+      left: 75%;
+      width: 25%;
+      font-size: 11px;
+      padding-bottom: 1px;
+      border: none;
+   }
+   .footer-form .footer-input::placeholder{
+      font-size: 11px;
+      padding-left: 10px;
+   }
+   .footer-form .footer-submit:hover {
+      background-color: yellow;
+   }
+   .footer .footer2 p {
+      font-size: 14px;
+   }
+}
